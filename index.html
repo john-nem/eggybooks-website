@@ -1,46 +1,198 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Books</title>
-  <meta name="description" content="Official website for my books.">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      color: #222;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    .intro {
-      font-size: 1.1rem;
-      color: #555;
-      margin-bottom: 2rem;
-    }
-    .book {
-      border-top: 1px solid #ddd;
-      padding: 1.25rem 0;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eggy Books | John and Paige Nemec</title>
+  <meta
+    name="description"
+    content="Eggy Books by John and Paige Nemec. Discover fun picture books for toddlers and preschoolers, including Dinosaur Eggy Countdown and Rocketship Blast Off."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>My Books</h1>
-  <p class="intro">Welcome to my book website. More details coming soon. Stay Tuned!</p>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <div class="book">
-    <h2>Dinosaur Eggy Countdown</h2>
-    <p>Have fun counting the dinos!</p>
-  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand">
+        <img
+          src="images/eggy-books-logo.png"
+          alt="Eggy Books logo"
+          class="brand-logo"
+          width="80"
+          height="80"
+        />
+        <div class="brand-text">
+          <span class="brand-name">Eggy Books</span>
+          <span class="brand-subtitle">By John and Paige Nemec</span>
+        </div>
+      </a>
 
-  <div class="book">
-    <h2>Rocketship Blastoff</h2>
-    <p>have fun blasting off with the rockets!</p>
-  </div>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#books">Books</a>
+        <a href="#about">About</a>
+        <a href="#buy">Buy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Picture books for little explorers</p>
+          <h1>Fun read-aloud books for toddlers and preschoolers.</h1>
+          <p class="hero-copy">
+            Welcome to Eggy Books, home of playful stories by John and Paige Nemec.
+            From dinosaurs hatching to rockets blasting off, each book is made to
+            spark wonder, rhythm, and smiles at storytime.
+          </p>
+          <div class="hero-buttons">
+            <a class="button button-primary" href="#books">See the books</a>
+            <a class="button button-secondary" href="#about">Meet the authors</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <img
+            src="images/dinosaur-eggy-countdown-cover.png"
+            alt="Cover of Dinosaur Eggy Countdown"
+            width="500"
+            height="500"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="books" class="section books-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Our books</p>
+          <h2>Stories made for counting, learning, and imagination.</h2>
+        </div>
+
+        <div class="book-grid">
+          <article class="book-card">
+            <img
+              src="images/dinosaur-eggy-countdown-cover.png"
+              alt="Cover of Dinosaur Eggy Countdown"
+              width="400"
+              height="400"
+              loading="lazy"
+            />
+            <div class="book-content">
+              <h3>Dinosaur Eggy Countdown</h3>
+              <p>
+                Join the fun as ten little dinosaur eggys wait for a big surprise.
+                One by one, the eggs begin to crack and hatch, revealing adorable
+                baby dinosaurs ready to explore the world.
+              </p>
+              <p>
+                Told in playful rhymes, this colorful counting adventure makes
+                storytime exciting for little ones who love dinosaurs, discovery,
+                and learning through rhythm.
+              </p>
+              <a
+                class="button button-primary"
+                href="https://a.co/d/0cNiiMVH"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Buy on Amazon
+              </a>
+            </div>
+          </article>
+
+          <article class="book-card">
+            <img
+              src="images/rocketship-blast-off-cover.png"
+              alt="Cover of Rocketship Blast Off"
+              width="400"
+              height="400"
+              loading="lazy"
+            />
+            <div class="book-content">
+              <h3>Rocketship Blast Off</h3>
+              <p>
+                Count down with real NASA rockets, from Mercury to the Space Shuttle
+                and beyond to Artemis, in this fun and engaging picture book for
+                young space lovers.
+              </p>
+              <p>
+                With playful rhymes, fun facts, and bold illustrations, this read-aloud
+                adventure brings space missions to life for toddlers and preschoolers
+                who love rockets and blast offs.
+              </p>
+              <a
+                class="button button-primary"
+                href="https://a.co/d/0bdkJijc"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Buy on Amazon
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="container about-box">
+        <div>
+          <p class="eyebrow">About the authors</p>
+          <h2>John and Paige Nemec create books together.</h2>
+        </div>
+        <p>
+          John and Paige Nemec are the creative team behind Eggy Books. Together,
+          they write playful stories for young children, and John illustrates the
+          books to bring each adventure to life with warmth, color, and imagination.
+        </p>
+      </div>
+    </section>
+
+    <section id="buy" class="section buy-section">
+      <div class="container buy-box">
+        <p class="eyebrow">Start reading</p>
+        <h2>Find Eggy Books on Amazon.</h2>
+        <p>
+          Browse the books, pick your favorite adventure, and bring home a fun new
+          read-aloud for your little one.
+        </p>
+        <div class="buy-buttons">
+          <a
+            class="button button-primary"
+            href="https://a.co/d/0cNiiMVH"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Buy Dinosaur Eggy Countdown
+          </a>
+          <a
+            class="button button-secondary"
+            href="https://a.co/d/0bdkJijc"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Buy Rocketship Blast Off
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Eggy Books by John and Paige Nemec. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
