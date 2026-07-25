@@ -259,6 +259,24 @@ a {
   object-position: center;
 }
 
+.book-image-link {
+  display: block;
+}
+
+.book-image-link:hover .book-image-wrap{
+  transform: translateY(-4px);
+}
+
+.book-image-wrap {
+  aspect-ratio: 1 / 1;
+  background: var(--surface-soft);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
 .book-content {
   padding: 1.5rem;
 }
