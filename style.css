@@ -1,18 +1,18 @@
 :root {
-  --bg: #fffdf8;
+  --bg: #fffdf7;
   --surface: #ffffff;
-  --surface-soft: #fff7eb;
-  --text: #2f2a24;
-  --muted: #6b6258;
-  --line: #eadfce;
-  --primary: #ff9f1c;
-  --primary-dark: #e38708;
-  --secondary: #4f7cff;
-  --secondary-dark: #355fe0;
-  --accent: #ffefd6;
+  --surface-soft: #eaf7ff;
+  --text: #4B4E6D;
+  --muted: #6d6772;
+  --line: #dfe8ef;
+  --primary: #FFE08A;
+  --primary-dark: #fccf8cec;
+  --secondary: #8fd8c7;
+  --secondary-dark: #5fbba6;
+  --accent: #ffe9f2;
   --max-width: 1100px;
   --radius: 20px;
-  --shadow: 0 12px 30px rgba(58, 42, 20, 0.08);
+  --shadow: 0 12px 30px rgba(70, 50, 70, 0.08);
 }
 
 * {
@@ -142,7 +142,7 @@ a {
   border-radius: 999px;
   font-size: 0.9rem;
   font-weight: 700;
-  color: #8a5600;
+  color: #c7658f;
 }
 
 .hero h1,
@@ -184,7 +184,7 @@ a {
 
 .button-primary {
   background: var(--primary);
-  color: #ffffff;
+  color: #4B4E6D;
 }
 
 .button-primary:hover {
@@ -192,15 +192,14 @@ a {
 }
 
 .button-secondary {
-  background: #ffffff;
-  color: var(--secondary-dark);
-  border: 1px solid #cdd8ff;
+  background: #f2fffb;
+  color: #2e7f70;
+  border: 1px solid #bfe9dd;
 }
 
 .button-secondary:hover {
-  background: #f3f6ff;
+  background: #e4fbf4;
 }
-
 .hero-card,
 .book-card,
 .about-box,
@@ -241,9 +240,20 @@ a {
   overflow: hidden;
 }
 
-.book-card img {
-  width: 100%;
+.book-image-wrap {
+  aspect-ratio: 1 / 1;
   background: var(--surface-soft);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 
 .book-content {
@@ -270,7 +280,7 @@ a {
 .site-footer {
   border-top: 1px solid var(--line);
   padding: 1.5rem 0 2.5rem;
-  background: #fffaf2;
+  background: #fdf6ff;
 }
 
 .footer-inner {
